@@ -1,6 +1,14 @@
+import './style.css';
+
 function Navigation({ currentPage, handlePageChange }) {
     return (
-        <div>
+
+        <header>
+        <img id='header-img' src='images2.png'></img>
+
+        <p id='header-text'>Dae'Stanii Spackman</p>
+
+        <div id='nav-bar'>
 
         <a href="#about"
         onClick={() => handlePageChange('About')}
@@ -24,6 +32,7 @@ function Navigation({ currentPage, handlePageChange }) {
         >Resume</a>
 
         </div>
+        </header>
     );
 }
 
