@@ -1,5 +1,5 @@
 * {
-    background-color: #e8eef2;
+    background-color: #eff6e0;
     margin: 0;
     padding: 0;
     color: #34403a;
@@ -40,7 +40,8 @@ header img {
 }
 
 .nav-link:hover {
-    border: 2px solid #34403a;
+    background-color: #34403a;
+    color: #eff6e0;
 }
 
 .active {

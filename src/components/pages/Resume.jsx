@@ -1,10 +1,23 @@
 export default function Resume() {
+
+    const onDownloadClick = () => {
+      const pdfUrl = "resume.pdf";
+      const link = document.createElement("a");
+      link.href = pdfUrl;
+      link.download = "resume.pdf";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+
     return (
       <div>
         <h1>Resume Page</h1>
-        <p>
-            My resume
-        </p>
+        <button
+          onClick={onDownloadClick}
+        >Download PDF</button>
+        <hr></hr>
+        <iframe src="resume.pdf" style={{width: '500px', height: '500px'}}></iframe>
       </div>
     );
   }
