@@ -28,6 +28,8 @@ const handleInputChange = (e) => {
   }
 };
 
+// write function to add to onclick for the validation
+
 const handleFormSubmit = (e) => {
  e.preventDefault();
 

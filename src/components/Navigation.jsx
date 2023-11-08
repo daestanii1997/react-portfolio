@@ -1,39 +1,36 @@
-import './style.css';
+import { useState } from 'react';
+import Header from './Header';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Portfolio from './pages/Portfolio';
+import Resume from './pages/Resume'
+import Footer from './Footer';
 
-function Navigation({ currentPage, handlePageChange }) {
+export default function PortfolioContainer() {
+    const [currentPage, setCurrentPage] = useState('About');
+
+    const renderPage = () => {
+        if (currentPage === 'About') {
+            return <About />
+        }
+        if (currentPage === 'Contact') {
+            return <Contact />
+        }
+        if (currentPage === 'Portfolio') {
+            return <Portfolio />
+        }
+        if (currentPage === 'Resume') {
+            return <Resume />
+        }
+    };
+
+    const handlePageChange = (page) => setCurrentPage(page);
+
     return (
-
-        <header>
-        <img id='header-img' src='images2.png'></img>
-
-        <p id='header-text'>Dae'Stanii Spackman</p>
-
-        <div id='nav-bar'>
-
-        <a href="#about"
-        onClick={() => handlePageChange('About')}
-        className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
-        >About</a>
-
-        
-        <a href="#contact"
-        onClick={() => handlePageChange('Contact')}
-        className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
-        >Contact</a>
-
-        <a href="#Portfolio"
-        onClick={() => handlePageChange('Portfolio')}
-        className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
-        >Portfolio</a>
-
-        <a href="#Resume"
-        onClick={() => handlePageChange('Resume')}
-        className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
-        >Resume</a>
-
-        </div>
-        </header>
+    <div>
+        <Header currentPage={currentPage} handlePageChange={handlePageChange} />
+        <main>{renderPage()}</main>
+        <Footer />
+    </div>
     );
 }
-
-export default Navigation;

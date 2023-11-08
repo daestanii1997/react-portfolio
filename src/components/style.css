@@ -2,7 +2,7 @@
     background-color: #e8eef2;
     margin: 0;
     padding: 0;
-    color: #4d1a7e;
+    color: #34403a;
 }
 
 header img {
@@ -13,14 +13,16 @@ header img {
 }
 
 #header-text {
-    background-color: #e8eef200;
+    background-color: transparent;
     font-size: 50px;
     position: absolute;
     top: 55px;
+    color: #eff6e0;
+    margin-left: 10px;
 }
 
 #nav-bar {
-    background-color: #e8eef200;
+    background-color:transparent;
     height: 50px;
     position: absolute;
     right: 20px;
@@ -33,17 +35,16 @@ header img {
     padding: 3px;
     font-size: 20px;
     text-decoration: none;
-    background-color: #d6c9c9;
+    background-color: #eff6e0;
     border-radius: 5px;
 }
 
 .nav-link:hover {
-    border: 2px solid #77b6ea;
+    border: 2px solid #34403a;
 }
 
 .active {
-    border: solid 2px #77b6ea;
-    background-color: #77b6ea;
+    background-color: #aec3b0;
 }
 
 .form-container {
@@ -55,7 +56,7 @@ header img {
 }
 
 .contact-input {
-    border-color:  #77b6ea;
+    border-color:  #34403a;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -69,7 +70,7 @@ textarea {
 }
 
 button {
-    background-color: #77b6ea;
+    background-color: #aec3b0;
     border: none;
     padding: 7px;
     border-radius: 5px;
@@ -77,9 +78,10 @@ button {
     font-weight: bold;
 }
 
+/* TODO */
 button:hover {
-    background-color: #d6c9c9;
-    color: #365670;
+    background-color: #eff6e0;
+    color: #aec3b0;
 }
 
 .error-container {
@@ -114,16 +116,29 @@ button:hover {
 
 .avatar {
     margin-left: 20px;
-    border: 1px solid black;
+    border: 1px solid #34403a;
     border-radius: 50%;
     height: 75px;
 }
+
+.project-container {
+    
+}
+
+.project-container a {
+    text-decoration: none;
+}
+
+.project-container img {
+    width: 40px;
+}
+
 
 footer {
     position: fixed;
     bottom: 0px;
     width: 100%;
-    background-color: #d6c9c9;
+    background-color: #aec3b0;
     height: 50px;
     text-align: center;
     padding-top: 25px;
@@ -133,7 +148,7 @@ footer {
 footer a {
     margin-left: 20px;
     text-decoration: none;
-    background-color: #d6c9c9;
+    background-color: #aec3b0;
 }
 
 .footer-images {

@@ -1,5 +1,5 @@
-import PortfolioContainer from "./components/PortfolioContainer"
+import Navigation from "./components/Navigation"
 
-const App = () => <PortfolioContainer />;
+const App = () => <Navigation />;
 
 export default App;
