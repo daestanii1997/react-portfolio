@@ -14,6 +14,7 @@ export default function Resume() {
       <div>
         <h1>Resume Page</h1>
         <button
+          className="download-button"
           onClick={onDownloadClick}
         >Download PDF</button>
         <hr></hr>

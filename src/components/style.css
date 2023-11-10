@@ -3,18 +3,17 @@
     margin: 0;
     padding: 0;
     color: #34403a;
+    font-family: 'Roboto Mono', monospace;
 }
 
 header img {
-    /* background-image: url('images2.png'); */
-    /* background-position: 100% 100%; */
     width: 100%;
     height: 150px;
 }
 
 #header-text {
     background-color: transparent;
-    font-size: 50px;
+    font-size: 37px;
     position: absolute;
     top: 55px;
     color: #eff6e0;
@@ -32,8 +31,8 @@ header img {
 
 .nav-link {
     margin-left: 17px;
-    padding: 3px;
-    font-size: 20px;
+    padding: 4px;
+    font-size: 17px;
     text-decoration: none;
     background-color: #eff6e0;
     border-radius: 5px;
@@ -85,6 +84,11 @@ button:hover {
     color: #aec3b0;
 }
 
+.download-button:hover {
+    background-color: #34403a;
+    color: #eff6e0;
+}
+
 .error-container {
     margin-top: 30px;
 }
@@ -107,11 +111,11 @@ button:hover {
 .about-title h1 {
     margin-left: 25px;
     margin-top: 20px;
-    font-size: 28px;
+    font-size: 25px;
 }
 
 .about-content {
-    margin-top: 10px;
+    margin-top: 15px;
     font-size: 19px;
 }
 
@@ -122,16 +126,44 @@ button:hover {
     height: 75px;
 }
 
+.project-section {
+    column-count: 2;
+    column-width: 50%;
+    margin-top: 35px;
+}
+
 .project-container {
-    
+    position: relative;
+    text-align: center;
+    width: 85%;
+    margin: 40px;
 }
 
-.project-container a {
+.project-container:hover {
+    transform: scale(1.5);
+}
+
+.project-title {
+    background-color: #aec3b0;
     text-decoration: none;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.project-container img {
-    width: 40px;
+.git-link {
+    text-decoration: none;
+    position: absolute;
+    top: 40%;
+    left: 73%;
+    transform: translate(-50%, -50%);
+}
+
+.project-image {
+    z-index: -1;
+    width: 75%;
+    height: 150px;
 }
 
 
