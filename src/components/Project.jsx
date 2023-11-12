@@ -3,6 +3,7 @@ import "./style.css";
 export default function Project(props) {
   return (
     <section >
+      {/* Mapping the projects data to use on the portfolio */}
       {props.projects.map((project) => (
         <div key={project.id} className="project-container">
           <img className="project-image" src={project.image}></img>

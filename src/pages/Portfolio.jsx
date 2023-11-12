@@ -9,6 +9,7 @@ export default function Portfolio() {
   const [projects, setProjects] = useState([]);
 
   const oneProject = [];
+  // for loop to display each project
   for (let i = 0; i< title.length; i++) {
     oneProject.push(new Projects(i+1, image[i] ,title[i], github[i], deployed[i] ))
   }

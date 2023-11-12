@@ -3,6 +3,7 @@ import { useState } from 'react';
 
 export default function Contact() {
 
+  // validating email address
   function validateEmail(email) {
     const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(String(email).toLowerCase());
@@ -19,6 +20,7 @@ const handleInputChange = (e) => {
   const inputType = target.name;
   const inputValue = target.value;
 
+  // Setting the input values
   if (inputType === 'name') {
     setName(inputValue);
   } else if (inputType === 'email') {
@@ -28,11 +30,10 @@ const handleInputChange = (e) => {
   }
 };
 
-// write function to add to onclick for the validation
-
 const handleFormSubmit = (e) => {
  e.preventDefault();
 
+//  Setting error messages if no input value
   if (!validateEmail(email)) {
     setErrorMessage('Email is invalid');
     return;
@@ -42,6 +43,7 @@ const handleFormSubmit = (e) => {
     return;
   }
 
+  // Setting input fields back to an empty string
   setName('');
   setEmail('');
   setMessage('');

@@ -15,7 +15,6 @@ function Navigation({ currentPage, handlePageChange }) {
         className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
         >About</a>
 
-        
         <a href="#contact"
         onClick={() => handlePageChange('Contact')}
         className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
