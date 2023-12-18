@@ -12,8 +12,8 @@ export default function Project(props) {
 
           <a className="git-link" href={project.github}>
             <img
-            style={{width: '40px'}}
-              src="github-mark.png"
+            className="git-icon"
+              src="github-icon.png"
             ></img>
           </a>
         </div>

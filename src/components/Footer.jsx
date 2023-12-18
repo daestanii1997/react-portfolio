@@ -4,7 +4,7 @@ export default function Footer() {
     return (
         <footer>
             <a href='https://github.com/daestanii1997'>
-                <img className='footer-images' src='github-mark.png' style={{borderRadius: '30px'}} ></img>
+                <img className='footer-images' src='github-icon.png' style={{borderRadius: '30px'}} ></img>
             </a>
 
             <a href='www.linkedin.com/in/dae-stanii-spackman-280b5a182'>

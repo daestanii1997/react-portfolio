@@ -163,6 +163,12 @@ button:hover {
     top: 40%;
     left: 73%;
     transform: translate(-50%, -50%);
+    background-color: transparent;
+}
+
+.git-icon {
+    background-color: transparent;
+    width: 40px;
 }
 
 .project-image {
@@ -191,6 +197,7 @@ footer a {
 }
 
 .footer-images {
+    background-color: transparent;
     height: 50px;
     width: 50px;
 }
