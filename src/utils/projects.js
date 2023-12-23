@@ -1,9 +1,6 @@
 import artBeats from '/art-beats.png';
-import lacks from '/lacks.png';
-import quiz from '/quiz.png';
 import scheduler from '/scheduler.png';
 import weather from '/weather.png';
-import notes from '/note-taker.png'
 
 class Projects {
     constructor(id, image, title, github, deployed) {
