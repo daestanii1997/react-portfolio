@@ -18,11 +18,8 @@ class Projects {
 const allProjects = {
     image: [
         artBeats,
-        lacks,
-        quiz,
         scheduler,
         weather,
-        notes,
     ],
     title: [
         'ArtBeats',
