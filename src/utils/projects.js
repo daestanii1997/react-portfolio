@@ -26,27 +26,18 @@ const allProjects = {
     ],
     title: [
         'ArtBeats',
-        'Lacks',
-        'Coding Quiz',
         'Daily Scheduler',
         'Weather Search',
-        'Note Taker'
     ],
     github: [
         'https://github.com/JeremyBlau/Artbeats.git',
-        'https://github.com/daestanii1997/lacks',
-        'https://github.com/daestanii1997/Coding-Quiz',
         'https://github.com/daestanii1997/Daily-Schedule',
         'https://github.com/daestanii1997/Weather-Search',
-        'https://github.com/daestanii1997/note-taker'
     ],
     deployed: [
         'https://jeremyblau.github.io/ArtBeats/',
-        'https://lacks-production.up.railway.app/',
-        'https://daestanii1997.github.io/Coding-Quiz/',
         'https://daestanii1997.github.io/Daily-Schedule/',
         'https://daestanii1997.github.io/Weather-Search/',
-        'https://note-taker-production-76ce.up.railway.app/'
     ]
 }
 
