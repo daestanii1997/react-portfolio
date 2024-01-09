@@ -11,14 +11,14 @@ export default function Resume() {
     }
 
     return (
-      <div>
+      <div className="center">
         <h1>Resume Page</h1>
         <button
           className="download-button"
           onClick={onDownloadClick}
         >Download PDF</button>
         <hr></hr>
-        <iframe src="resume.pdf" style={{width: '500px', height: '500px'}}></iframe>
+        <iframe src="resume.pdf" style={{width: '50%', height: '500px'}}></iframe>
       </div>
     );
   }

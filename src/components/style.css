@@ -11,12 +11,30 @@ header img {
     width: 100%;
     height: 150px;
 }
+@media screen and (min-width: 601px) {
+    #header-text {
+        font-size: 37px;
+    }
+
+    .nav-link {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #header-text {
+        font-size: 20px;
+    }
+
+    .nav-link {
+        font-size: 11px;
+    }
+}
 
 #header-text {
     background-color: transparent;
-    font-size: 37px;
     position: absolute;
-    top: 55px;
+    top: 50px;
     color: #eff6e0;
     margin-left: 10px;
 }
@@ -27,14 +45,14 @@ header img {
     height: 50px;
     position: absolute;
     right: 20px;
-    top: 75px;
+    top: 110px;
     
 }
 
 .nav-link {
     margin-left: 17px;
     padding: 4px;
-    font-size: 17px;
+    /* font-size: 17px; */
     text-decoration: none;
     background-color: #eff6e0;
     border-radius: 5px;
@@ -81,7 +99,7 @@ button {
     font-weight: bold;
 }
 
-/* TODO */
+/* Button hover */
 button:hover {
     background-color: #eff6e0;
     color: #aec3b0;
@@ -92,6 +110,7 @@ button:hover {
     color: #eff6e0;
 }
 
+/* Error Page */
 .error-container {
     margin-top: 30px;
 }
@@ -132,50 +151,53 @@ button:hover {
 
 /* Portfolio Section */
 .project-section {
-    column-count: 2;
-    column-width: 50%;
-    margin-top: 35px;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 3.5rem;
+}
+
+.border {
+    z-index: 1;
+    border: solid 2px #34403a;
+    border-radius: 20px;
+    padding: 2rem;
+    margin-bottom: 5px;
 }
 
 .project-container {
+    background-color: transparent;
+    z-index: 0;
+    padding-top: 5px;
     position: relative;
     text-align: center;
-    width: 85%;
-    margin: 40px;
 }
 
 .project-container:hover {
-    transform: scale(1.5);
+    transform: scale(1.1);
 }
 
 .project-title {
-    background-color: #aec3b0;
-    text-decoration: none;
+    font-weight: 600;
+    color: #34403a;
+    background-color: transparent;
     position: absolute;
-    top: 40%;
+    width:max-content;
+    top: -10px;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.git-link {
-    text-decoration: none;
-    position: absolute;
-    top: 40%;
-    left: 73%;
-    transform: translate(-50%, -50%);
-    background-color: transparent;
-}
-
-.git-icon {
-    background-color: transparent;
-    width: 40px;
-}
-
 .project-image {
-    z-index: -1;
     width: 75%;
+    max-width: 400px;
     height: 150px;
     border-radius: 10px;
+}
+
+/* Resume Page */
+.center {
+    text-align: center;
+    padding-bottom: 3.5rem;
 }
 
 /* Footer Section */
@@ -184,10 +206,10 @@ footer {
     bottom: 0px;
     width: 100%;
     background-color: #aec3b0;
-    height: 50px;
+    height: 3rem;
     text-align: center;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: .5rem;
+    /* padding-bottom: 25px; */
 }
 
 footer a {
@@ -198,6 +220,6 @@ footer a {
 
 .footer-images {
     background-color: transparent;
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
 }

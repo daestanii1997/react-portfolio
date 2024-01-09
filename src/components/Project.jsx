@@ -2,22 +2,26 @@ import "./style.css";
 
 export default function Project(props) {
   return (
-    <section >
+    <>
       {/* Mapping the projects data to use on the portfolio */}
       {props.projects.map((project) => (
-        <div key={project.id} className="project-container">
-          <img className="project-image" src={project.image}></img>
-
-          <a className="project-title" href={project.deployed}>{project.title}</a>
-
-          <a className="git-link" href={project.github}>
-            <img
-            className="git-icon"
-              src="github-icon.png"
-            ></img>
-          </a>
-        </div>
+        <section className="border">
+          <div key={project.id} className="project-container">
+            <a href={project.deployed}>
+              <img className="project-image" src={project.image}></img>
+            </a>
+            <h3 className="project-title">{project.title}</h3>
+            <div style={{ backgroundColor: "transparent" }}>
+              <button style={{ marginRight: "5px" }} href={project.deployed}>
+                Deployed
+              </button>
+              <button href={project.github}>
+                Github
+              </button>
+            </div>
+          </div>
+        </section>
       ))}
-    </section>
+    </>
   );
 }
