@@ -11,6 +11,7 @@ header img {
     width: 100%;
     height: 150px;
 }
+
 @media screen and (min-width: 601px) {
     #header-text {
         font-size: 37px;
@@ -19,15 +20,38 @@ header img {
     .nav-link {
         font-size: 17px;
     }
+
+    .about-title h1, .contact-title {
+        font-size: 25px;
+    }
+
+    .avatar {
+        height: 75px;
+    }
+    .about-content {
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 600px) {
-    #header-text {
+    #header-text, .contact-title {
         font-size: 20px;
     }
 
     .nav-link {
         font-size: 11px;
+    }
+
+    .about-title h1 {
+        font-size: 17px;
+    }
+
+    .avatar {
+        height: 45px;
+    }
+
+    .about-content {
+        font-size: 15px;
     }
 }
 
@@ -74,6 +98,7 @@ header img {
     margin: auto;
     padding: 10px;
     text-align: center;
+    padding-bottom: 4rem;
 }
 
 .contact-input {
@@ -122,7 +147,8 @@ button:hover {
 /* About Me Section */
 .about-container {
     margin: auto;
-    width: 50%;
+    width: 60%;
+    padding-bottom: 4rem;
 }
 
 .about-title {
@@ -134,24 +160,22 @@ button:hover {
 .about-title h1 {
     margin-left: 25px;
     margin-top: 20px;
-    font-size: 25px;
 }
 
 .about-content {
     margin-top: 15px;
-    font-size: 19px;
 }
 
 .avatar {
     margin-left: 20px;
     border: 1px solid #34403a;
     border-radius: 50%;
-    height: 75px;
 }
 
 /* Portfolio Section */
 .project-section {
-    width: 50%;
+    width: 60%;
+    max-width: 400px;
     margin: auto;
     margin-bottom: 3.5rem;
 }
@@ -172,8 +196,8 @@ button:hover {
     text-align: center;
 }
 
-.project-container:hover {
-    transform: scale(1.1);
+.project-image:hover {
+    transform: scale(1.05);
 }
 
 .project-title {

@@ -12,7 +12,6 @@ export default function Resume() {
 
     return (
       <div className="center">
-        <h1>Resume Page</h1>
         <button
           className="download-button"
           onClick={onDownloadClick}

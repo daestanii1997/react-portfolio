@@ -13,8 +13,8 @@ export default function About() {
         background in administration allows me to look at each website from a
         users perspective and focus on the user experience, including
         accessiblity.
-      </p>
-      <p className="about-content">
+        </p>
+        <p className="about-content">
         When I am not at my desk coding, I enjoy painting, exploring different
         art mediums and spending time with my dog.
       </p>

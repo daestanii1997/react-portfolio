@@ -7,7 +7,7 @@ export default function Footer() {
                 <img className='footer-images' src='github-icon.png' alt='github icon' style={{borderRadius: '30px'}} ></img>
             </a>
 
-            <a href='https://www.linkedin.com/in/dae-stanii-spackman-280b5a182'>
+            <a href='https://www.linkedin.com/in/daestaniispackman/'>
                 <img className='footer-images' src='linkedin-logo.png' alt='linked in icon' style={{borderRadius: '10px'}} ></img>
             </a>
 
