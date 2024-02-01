@@ -14,24 +14,24 @@ class Projects {
 
 const allProjects = {
     image: [
-        artBeats,
-        scheduler,
         weather,
+        scheduler,
+        artBeats,
     ],
     title: [
-        'ArtBeats',
-        'Daily Scheduler',
         'Weather Search',
+        'Daily Scheduler',
+        'ArtBeats',
     ],
     github: [
-        'https://github.com/JeremyBlau/Artbeats.git',
+        'https://github.com/daestanii1997/weather-app',
         'https://github.com/daestanii1997/Daily-Schedule',
-        'https://github.com/daestanii1997/Weather-Search',
+        'https://github.com/JeremyBlau/Artbeats.git',
     ],
     deployed: [
-        'https://jeremyblau.github.io/ArtBeats/',
+        'https://weather-app-dvs.netlify.app/',
         'https://daestanii1997.github.io/Daily-Schedule/',
-        'https://daestanii1997.github.io/Weather-Search/',
+        'https://jeremyblau.github.io/ArtBeats/',
     ]
 }
 
